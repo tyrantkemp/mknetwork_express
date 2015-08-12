@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fng-2W-I2F">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOl-kx-vbn">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pNn-81-2Da">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iCw-Sp-0TN">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pass:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-hd-hOn">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pNn-81-2Da" firstAttribute="leading" secondItem="cOl-kx-vbn" secondAttribute="trailing" constant="8" id="1ra-hE-uw5"/>
+                            <constraint firstItem="iCw-Sp-0TN" firstAttribute="top" secondItem="pNn-81-2Da" secondAttribute="bottom" constant="48" id="9cO-ci-P5q"/>
+                            <constraint firstItem="cOl-kx-vbn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="129" id="Bcb-3H-jD7"/>
+                            <constraint firstItem="cOl-kx-vbn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="19" id="JHg-cN-MFA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iCw-Sp-0TN" secondAttribute="trailing" constant="53" id="JZa-PO-7Db"/>
+                            <constraint firstItem="fng-2W-I2F" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="52" id="OuS-g9-RrA"/>
+                            <constraint firstAttribute="centerX" secondItem="fng-2W-I2F" secondAttribute="centerX" id="Qqr-tP-j9T"/>
+                            <constraint firstItem="mbj-hd-hOn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="19" id="Wb8-uc-qjU"/>
+                            <constraint firstItem="iCw-Sp-0TN" firstAttribute="leading" secondItem="mbj-hd-hOn" secondAttribute="trailing" constant="8" id="mE6-9N-vbS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pNn-81-2Da" secondAttribute="trailing" constant="53" id="nFH-Sd-iyn"/>
+                            <constraint firstItem="pNn-81-2Da" firstAttribute="top" secondItem="fng-2W-I2F" secondAttribute="bottom" constant="50" id="sCH-zM-1zs"/>
+                            <constraint firstItem="mbj-hd-hOn" firstAttribute="top" secondItem="cOl-kx-vbn" secondAttribute="bottom" constant="54" id="uyC-pE-og5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="fng-2W-I2F"/>
+                                <exclude reference="cOl-kx-vbn"/>
+                                <exclude reference="pNn-81-2Da"/>
+                                <exclude reference="iCw-Sp-0TN"/>
+                                <exclude reference="mbj-hd-hOn"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Bcb-3H-jD7"/>
+                                <exclude reference="JHg-cN-MFA"/>
+                                <exclude reference="OuS-g9-RrA"/>
+                                <exclude reference="Qqr-tP-j9T"/>
+                                <exclude reference="9cO-ci-P5q"/>
+                                <exclude reference="JZa-PO-7Db"/>
+                                <exclude reference="mE6-9N-vbS"/>
+                                <exclude reference="Wb8-uc-qjU"/>
+                                <exclude reference="uyC-pE-og5"/>
+                                <exclude reference="1ra-hE-uw5"/>
+                                <exclude reference="nFH-Sd-iyn"/>
+                                <exclude reference="sCH-zM-1zs"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="fng-2W-I2F"/>
+                                <include reference="cOl-kx-vbn"/>
+                                <include reference="pNn-81-2Da"/>
+                                <include reference="iCw-Sp-0TN"/>
+                                <include reference="mbj-hd-hOn"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Bcb-3H-jD7"/>
+                                <include reference="JHg-cN-MFA"/>
+                                <include reference="OuS-g9-RrA"/>
+                                <include reference="Qqr-tP-j9T"/>
+                                <include reference="9cO-ci-P5q"/>
+                                <include reference="JZa-PO-7Db"/>
+                                <include reference="mE6-9N-vbS"/>
+                                <include reference="Wb8-uc-qjU"/>
+                                <include reference="uyC-pE-og5"/>
+                                <include reference="1ra-hE-uw5"/>
+                                <include reference="nFH-Sd-iyn"/>
+                                <include reference="sCH-zM-1zs"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="password" destination="iCw-Sp-0TN" id="b0F-Ll-zz1"/>
+                        <outlet property="user" destination="pNn-81-2Da" id="QJZ-5C-mbo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="404.25" y="223.125"/>
+        </scene>
+    </scenes>
+</document>
